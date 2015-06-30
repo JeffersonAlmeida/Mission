@@ -1,0 +1,19 @@
+5 5
+0 0 N
+MMMMM
+0 1 N
+MMMM
+0 2 N
+MMM
+0 4 N
+RMM
+0 5 N
+M
+3 3 N
+RRMMMM
+0 3 N
+LM
+2 3 S
+MMR
+2 3 W
+MLRLR
