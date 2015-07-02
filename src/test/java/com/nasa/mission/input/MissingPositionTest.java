@@ -2,7 +2,6 @@ package com.nasa.mission.input;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
@@ -11,7 +10,7 @@ import org.junit.Test;
 
 public class MissingPositionTest {
 	
-	private static final String INPUT = "..//missionmvn//inputs//missingPositionInput.txt";	
+	private static final String INPUT = "missingPositionInput.txt";	
 	private MissionInputReader inputReader;
 	
 	@Before

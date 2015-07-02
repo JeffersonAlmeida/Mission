@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 import com.nasa.mission.model.Plateau;
 import com.nasa.mission.util.Constants;
 
@@ -179,7 +180,7 @@ public enum ValidationErrors implements IError {
 	public static Properties getInstance() {
 		if(instance == null) {
 			String propFileName = Constants.VALIDATION_ERRORS;
-			File file = new File(propFileName);
+			File file = new File(ClassLoader.getSystemResource(propFileName).getPath());
 			FileInputStream fileInput;
 			instance = new Properties();
 			try {

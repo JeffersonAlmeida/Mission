@@ -17,7 +17,7 @@ import com.nasa.mission.model.Rover;
 
 public class RoversExecutionOrderTest {
 	
-	private static final String INPUT = "..//missionmvn//inputs//RoversExecutionOrderTest.txt";	
+	private static final String INPUT = "RoversExecutionOrderTest.txt";	
 	private MissionInputReader inputReader;
 	private List<Rover> rovers;
 	private Controller controller;

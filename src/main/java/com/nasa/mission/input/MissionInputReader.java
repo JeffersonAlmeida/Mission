@@ -1,6 +1,7 @@
 package com.nasa.mission.input;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -26,7 +27,7 @@ import com.nasa.mission.validator.InputValidator;
 public class MissionInputReader {
 
 	private BufferedReader br;
-	private String inputFile;
+	private File inputFile;
 	private Plateau plateau;
 	private List<Rover> rovers;
 	private boolean goAhead;
@@ -35,7 +36,7 @@ public class MissionInputReader {
 	public MissionInputReader(String input) {
 		this.rovers = new ArrayList<Rover>();
 		this.goAhead = true;
-		this.inputFile = input;
+		inputFile = new File(ClassLoader.getSystemResource(input).getPath());
 		lineCount = 1;
 		try {
 			FileReader fr = new FileReader(inputFile); 

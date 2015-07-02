@@ -17,7 +17,7 @@ import com.nasa.mission.model.Rover;
 
 public class Moving360Test {
 	
-	private static final String INPUT = "..//missionmvn//inputs//testing360.txt";	
+	private static final String INPUT = "testing360.txt";	
 	private MissionInputReader inputReader;
 	private List<Rover> rovers;
 	private Controller controller;

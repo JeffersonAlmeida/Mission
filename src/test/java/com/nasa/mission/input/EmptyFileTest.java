@@ -11,12 +11,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.nasa.mission.input.MissionInputReader;
 import com.nasa.mission.model.Rover;
 
 public class EmptyFileTest {
 	
-	private static final String INPUT = "..//missionmvn//inputs//inputEmpty.txt";	
+	private static final String INPUT = "inputEmpty.txt";	
 	private MissionInputReader inputReader;
 	
 	@Before

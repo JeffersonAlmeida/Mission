@@ -1,8 +1,7 @@
 package com.nasa.mission.input;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.util.List;
 
@@ -18,7 +17,7 @@ import com.nasa.mission.model.Rover;
 
 public class ProposedTest {
 	
-	private static final String INPUT = "..//missionmvn//inputs//proposedInput.txt";	
+	private static final String INPUT = "proposedInput.txt";	
 	private MissionInputReader inputReader;
 	private List<Rover> rovers;
 	private Controller controller;

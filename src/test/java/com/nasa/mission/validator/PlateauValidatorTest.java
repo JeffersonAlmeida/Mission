@@ -1,6 +1,10 @@
 package com.nasa.mission.validator;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
@@ -13,7 +17,6 @@ import com.nasa.mission.exceptions.MissionException;
 import com.nasa.mission.input.MissionInputReader;
 import com.nasa.mission.model.Plateau;
 import com.nasa.mission.model.Rover;
-import com.nasa.mission.util.Constants;
 
 public class PlateauValidatorTest {
 
@@ -29,8 +32,7 @@ public class PlateauValidatorTest {
 	@Test
 	public void testEnoughSpace() {
 		String file = "notEnoughSpace.txt";
-		String f = Constants.INPUTS + file;
-		MissionInputReader missionInputReader = new MissionInputReader(f);
+		MissionInputReader missionInputReader = new MissionInputReader(file);
 		Plateau plateau = missionInputReader.getPlateau();
 		List<Rover> rovers = missionInputReader.getRovers();
 		assertNotNull(plateau);

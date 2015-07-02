@@ -44,7 +44,7 @@ public enum ExecutionErrors implements IError {
 	public static Properties getInstance() {
 		if(instance == null) {
 			String propFileName = Constants.EXECUTION_ERRORS;
-			File file = new File(propFileName);
+			File file = new File(ClassLoader.getSystemResource(propFileName).getPath());
 			FileInputStream fileInput;
 			instance = new Properties();
 			try {
